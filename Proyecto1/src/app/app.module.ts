@@ -7,6 +7,9 @@ import { EncabezadoComponent } from './componentes/encabezado/encabezado.compone
 import { BannerComponent } from './componentes/banner/banner.component';
 import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
+import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
     EncabezadoComponent,
     BannerComponent,
     SobreMiComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
+    EducacionComponent,
+    HabilidadesComponent,
+    ProyectoComponent
   ],
   imports: [
     BrowserModule,

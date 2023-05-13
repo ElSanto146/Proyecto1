@@ -1,7 +1,6 @@
-body {
-    background-color: rgb(201, 247, 232);
+#cuerpo{
+    background-color: rgb(141, 236, 244);;
 }
-
 #container{
     background-color: rgb(141, 236, 244);
     width: 90%;
@@ -25,10 +24,7 @@ body {
 
 }
 
-#head{
-    background-color: rgb(73, 151, 240);
-    padding: 10px;
-}
+
 
 header{
     display: flex;
@@ -64,11 +60,11 @@ header{
 }
 
 
-#banner{
+/*#banner{
     background: url(/multimedia/montaña\ 1280x585\ .jpg);
     background-size: cover;
     height: 585px;
-}
+}*/
 
 #foto{
     width: 150px;
@@ -115,21 +111,6 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-#habilidades{
-    display: flex;
-    justify-content: space-around;
-}
-
-#habili{
-    height: auto;
-    width: 45%;
-}
-
-#habili2{
-    height: auto;
-    width: 45%;
 }
 
 .alto{
