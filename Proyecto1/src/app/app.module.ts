@@ -10,6 +10,7 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
     ExperienciaComponent,
     EducacionComponent,
     HabilidadesComponent,
-    ProyectoComponent
+    ProyectoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
