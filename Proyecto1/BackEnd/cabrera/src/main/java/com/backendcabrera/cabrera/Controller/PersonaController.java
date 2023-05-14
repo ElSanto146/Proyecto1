@@ -8,6 +8,7 @@ import com.backendcabrera.cabrera.Entity.Persona;
 import com.backendcabrera.cabrera.Interface.InterPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author Carlos
  */
+
 
 @RestController
 public class PersonaController {
@@ -52,10 +54,15 @@ public class PersonaController {
                                @RequestParam("apellido") String nuevoApellido){
         Persona persona = interpersonaService.findPersona(id);
         
-        persona.setNombre(nuevoNombre);
+        persona.setNombre(nuevoNombre); 
         persona.setApellido(nuevoApellido);
         
         interpersonaService.savePersona(persona);
         return persona;
+    }
+    
+    @GetMapping("/personas/traer/perfil")
+    public Persona findPersona(){
+        return interpersonaService.findPersona((long)1);
     }
 }
