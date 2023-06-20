@@ -4,7 +4,7 @@
     /*background-image: url(img/turkey-2674363_640.jpg);*/
     display: table-cell;
     vertical-align: middle;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../../../assets/turkey.jpg);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3)), url(../../../assets/turkey.jpg);
     
 }
 

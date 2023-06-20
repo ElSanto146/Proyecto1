@@ -7,7 +7,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'http://localhost:8080/personas/';
+  URL = 'http://localhost:8080/ver/personas/';
 
   //Puede ser que haya que cambiar el "HttpClient" por "HttpClientModule" o cambiar "HttpClientModule" por "HttpClient" en el archivo aap.module.ts en Import
   constructor(private http: HttpClient) { }

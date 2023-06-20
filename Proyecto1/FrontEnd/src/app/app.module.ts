@@ -12,11 +12,12 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { PersonaService } from './servicio/persona.service';
 
 @NgModule({
   declarations: [
@@ -37,11 +38,12 @@ import { LoginComponent } from './componentes/login/login.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
     
-
   ],
-  providers: [],
+  
+  providers: [PersonaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
