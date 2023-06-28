@@ -8,6 +8,11 @@
     width: 45%;
 }
 
+.alto {
+    height: auto;
+}
+
+
 #habili2{
     height: auto;
     width: 45%;
@@ -24,4 +29,14 @@
 h1{
     font-weight: bold;
     color: black;
+}
+
+h4{
+    font-weight: bold;
+}
+
+.izq {
+    text-align: right;
+    color: black;
+    
 }

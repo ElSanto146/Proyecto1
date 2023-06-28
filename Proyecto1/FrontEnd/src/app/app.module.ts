@@ -13,11 +13,12 @@ import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { PersonaService } from './servicio/persona.service';
+import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad/new-habilidad.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PersonaService } from './servicio/persona.service';
     ProyectoComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NewHabilidadComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { PersonaService } from './servicio/persona.service';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+ 
     
   ],
   

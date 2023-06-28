@@ -65,7 +65,7 @@
     background-color: rgb(153, 238, 238);
 }
 
-.utn{
+/*.utn{
     background-image: url(/multimedia/utn\ resistencia.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-}
+}*/
 
 .alto{
     height: 35px;
@@ -91,3 +91,12 @@
     
 }
 
+/*Estilo formularios*/
+.ng-valid:not(form).ng-touched {
+    border: 2px solid green;
+}
+
+.ng-invalid:not(form).ng-touched {
+    border: 2px solid red;
+}
+/*fin estilos formularios*/
