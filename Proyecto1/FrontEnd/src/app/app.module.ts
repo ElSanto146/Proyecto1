@@ -19,6 +19,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { PersonaService } from './servicio/persona.service';
 import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad/new-habilidad.component';
+import { EditHabilidadesComponent } from './edit/edit-habilidades/edit-habilidades.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad/n
     HomeComponent,
     LoginComponent,
     NewHabilidadComponent,
+    EditHabilidadesComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,7 @@ import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad/n
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    
  
     
   ],

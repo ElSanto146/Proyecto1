@@ -1,3 +1,10 @@
+
+//Se van a implementar los métodos cargarHabilidad para que se vean en el html y el método delete
+//Los otros se ejecutaran en otro componente que será llamado para editar o crear
+//Cuarto: ir al HTML de este componente
+
+
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Habilidad } from 'src/app/model/habilidad';
@@ -25,9 +32,15 @@ export class HabilidadesComponent implements OnInit {
     if (id != undefined) {
       this.sHabilidad.delete(id).subscribe(data => {
         this.cargarHabilidad();
-        this.router.navigate(['']);
+        //this.router.navigate(['']);
+      }, err =>{
+        alert("No se pudo eliminar la habilidad");
       });
     }
+  }
+
+  editar(id?:number){
+    
   }
 
 

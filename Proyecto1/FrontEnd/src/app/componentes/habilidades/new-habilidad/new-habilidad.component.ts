@@ -16,7 +16,7 @@ export class NewHabilidadComponent {
   habilidad: "" = "";
   porcentaje: 0 = 0;
 
-
+ 
 
   constructor(private sHabilidad: HabilidadService, private formBuilder: FormBuilder,  private router: Router) {
     this.form = this.formBuilder.group({

@@ -4,7 +4,7 @@
         <input type="text" class="form-control" id="habilidad"  formControlName="habilidad" [(ngModel)]="habilidad" [ngClass]="{'is-invalid': Habilidad?.errors && Habilidad?.touched, 'is-valid' : !Habilidad?.errors && Habilidad?.touched}">
         <div *ngIf="Habilidad?.errors && Habilidad?.touched">
             <p *ngIf="Habilidad?.hasError('required')" class="text-danger">La habilidad es requerida</p>
-        </div>
+        </div>  
     </div>
     <div class="mb-3 form-group">
         <label for="porcentaje" class="form-label">Indique el porcentaje</label>
@@ -16,4 +16,4 @@
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Crear habilidad</button>
-</form>
+</form> 
